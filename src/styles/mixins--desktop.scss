@@ -1,0 +1,92 @@
+/*---- MIXIN FONT ----*/
+
+@mixin title--desktop--1($color, $weight) {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' $weight;
+  font-size: 2vw;
+  color: $color;   
+}
+
+@mixin title--desktop--2($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 1.4vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+@mixin title--desktop--3($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 0.9vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin title--desktop--4($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 0.85vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+
+
+/*---- RICH CONTENT ----*/
+
+@mixin title--desktop--h1 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 900;
+  font-size: 4vw;
+  color: $--color--02;
+}
+
+@mixin title--desktop--h2 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 800;
+  font-size: 2.3vw;
+  color: $--color--02;
+  line-height: 1.15;
+}
+
+@mixin title--desktop--h3 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 700;
+  font-size: 1vw;
+  color: $--color--02;
+}
+
+@mixin text--desktop--large {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 45px;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--desktop--medium {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 2vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--desktop--small {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 1.6vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+/* POSITION MIXINS */
+@mixin position-home {
+  left: 30vw;
+  z-index: 900;
+}

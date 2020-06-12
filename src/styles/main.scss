@@ -1,0 +1,76 @@
+@import '@/styles/reset.scss';
+@import '@/styles/mixins--desktop.scss';
+@import '@/styles/mixins--super-desktop.scss';
+@import '@/styles/mixins--mobile.scss';
+
+/*–––– TYPOGRAPHY ––––*/
+@font-face {
+  font-family: 'McQueen';
+  src: url('~@/assets/fonts/McQueenTextGX.ttf');
+}
+
+@font-face {
+  font-family: 'Oni';
+  src: url('~@/assets/fonts/Oni_GX.ttf');
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0 !important;
+}
+
+.marginXL {
+  margin: 16vh 0;
+}
+
+
+/*---- WEIGHTS ----*/
+$--weight--thin: 100;
+$--weight--light: 300;
+$--weight--regular: 400;
+$--weight--medium: 600;
+$--weight--bold: 800;
+
+
+/*---- COLORS -----*/
+$--color--01: rgba(241, 153, 94, 1);
+$--color--02: rgba(42, 102, 131, 1);
+$--color--03: rgba(241, 231, 223, 1);
+
+
+/*---- MEDIA QUERIES ----*/
+$--breakpoint--super-desktop: 1800px; 
+$--breakpoint--desktop: 1200px;
+$--breakpoint--tablet: 768px;
+$--breakpoint--mobile: 320px; 
+
+
+/*---- SPACERS ----*/
+$--spacer-MEGA: 250px;
+$--spacer--XXL: 200px;
+$--spacer--XL: 150px;
+$--spacer--L: 100px;
+$--spacer--M: 80px;
+$--spacer--S: 60px;
+$--spacer--XS: 40px;
+$--spacer--XXS: 20px;
+
+/*---- PADDINGS ----*/
+$--padding--XL: 20vw;
+$--padding--L: 16vw;
+$--padding--M: 12vw;
+$--padding--R: 9vw;
+$--padding--S: 6vw;
+$--padding--XS: 4vw;
+$--padding--XXS: 2vw;
+
+/*---- CSS Style ----*/
+body {
+  overflow-x: hidden;
+  background: #fff;
+}

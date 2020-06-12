@@ -1,0 +1,85 @@
+/*---- MIXIN FONT ----*/
+
+@mixin title--super-desktop--1($color, $weight) {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' $weight;
+  font-size: 2vw;
+  color: $color;   
+}
+
+@mixin title--super-desktop--2($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 1.4vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+@mixin title--super-desktop--3($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 0.7vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin title--super-desktop--4($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 0.7vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+
+
+/*---- RICH CONTENT ----*/
+
+@mixin title--super-desktop--h1 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 900;
+  font-size: 3.4vw;
+  color: $--color--02;
+}
+
+@mixin title--super-desktop--h2 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 700;
+  font-size: 1.8vw;
+  color: $--color--02;
+}
+
+@mixin title--super-desktop--h3 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 300;
+  font-size: 24px;
+  color: $--color--02;
+}
+
+@mixin text--super-desktop--large {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 100;
+  font-size: 3vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--super-desktop--medium {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 100;
+  font-size: 24px;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--super-desktop--small {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 1vw;
+  color: $--color--02;
+  line-height: 1.45;
+}

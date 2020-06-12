@@ -1,0 +1,71 @@
+/* POSITION MIXINS */
+@mixin position-home-mobile {
+  left: 36vw;
+  z-index: 900;
+}
+
+@mixin title--mobile--1($color, $weight) {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' $weight;
+  font-size: 8vw;
+  color: $color;
+}
+
+@mixin title--mobile--3($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 3.4vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin title--mobile--4($color, $weight) {
+  font-family: 'McQueen';
+  font-variation-settings: 'wght' $weight;
+  font-size: 2vw;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+
+/*==============*/
+
+@mixin title--mobile--h1 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 900;
+  font-size: 10vw;
+  color: $--color--02;
+}
+
+@mixin title--mobile--h2 {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 900;
+  font-size: 6vw;
+  color: $--color--02;
+}
+
+@mixin text--mobile--large {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 6.5vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--mobile--medium {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 6vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
+
+@mixin text--mobile--small {
+  font-family: 'Oni';
+  font-variation-settings: 'wght' 200;
+  font-size: 5vw;
+  color: $--color--02;
+  line-height: 1.4;
+}
