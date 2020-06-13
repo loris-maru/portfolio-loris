@@ -64,6 +64,7 @@
 import sanity from '@/sanity'
 import imageUrlBuilder from '@sanity/image-url'
 const imageBuilder = imageUrlBuilder(sanity)
+
 import {TimelineLite} from 'gsap'
 // Components
 import infoBar from '@/components/InfoBar.vue'
