@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import {TimelineLite} from 'gsap'
   export default {
     data() {
       return {
