@@ -94,7 +94,7 @@ const query = `*[_type == 'projects']{
         projects: query,
         currentProjectIndex: 0,
         options: {
-          licenseKey: "D6F9303C-80914FEB-BBADE2A6-38FABE40",
+          licenseKey: "A17AFEE7-3E934105-8EFA71FE-4C5A4243",
           scrollHorizontallyKey: "bG9yaXMtb2xpdmllci1wb3J0Zm9saW8ubmV0bGlmeS5hcHBfdFdRYzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1NWZw",
           scrollHorizontally: true,
           afterSlideLoad: this.onAfterSlideLoad,
