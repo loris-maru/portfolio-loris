@@ -18,7 +18,7 @@
         :visibility="opend" />
 
       <nav id="menu" ref="menuBloc">
-        <Menu :style="{left: `${positionMenu}vw`}" />
+        <Menu :style="{left: `${positionMenu}vw`}" class="MenuContentBloc" />
       </nav>
 
       <div ref="blueContainer" class="blueContainer"></div>
@@ -26,8 +26,6 @@
       
       <!-- MAIN Panel Sliding on Right -->
       <main id="panel">
-        <div class="filterContentMenu" :class="{filterOpacity: opend}">
-        </div>
         <router-view />
       </main>
 
@@ -149,24 +147,12 @@ import {opend} from '@/services/menuService'
   opacity: 0;
 }
 
+
+
 #panel {
   position: relative;
   z-index: 8000;
 }
 
-.filterContentMenu {
-  position: absolute;
-  z-index: 8500;
-  width: 100vw;
-  height: 100vh;
-  background: $--color--02;
-  opacity: 0;
-
-  transition: all ease-in-out 0.4s;
-}
-
-.filterOpacity {
-  opacity: 0.96;
-}
 
 </style>

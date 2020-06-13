@@ -42,7 +42,7 @@ button {
   width: 42vh;
   height: 42vh;
   /*background: transparent;*/
-  background: rgba(42, 102, 131, 0.3);
+  background: rgba(42, 102, 131, 0.15);
   border: {
     radius: 50%;
     width: 4px;

@@ -34,6 +34,9 @@ import Text from '@/components/projects/TextLevelOne.vue'
 // Plugins
 import sanity from '@/sanity'
 import {TimelineLite} from 'gsap'
+
+import {onMenuStateChange, removeOnMenuStateChangeListener} from '@/services/menuService'
+
 const COMPONENT_MAP = {
   // first key is from Sanity
   // Second one is the component in Vue
@@ -93,10 +96,13 @@ const COMPONENT_MAP = {
       }
     },
     mounted() {
-      const tl = new TimelineLite()
-      /*tl.to(this.$refs.projectBody, 2.25, {
-        left: '0'
-      })*/
+      const onMenuStateChangeCallback = (opend) => {
+        this.$refs.fullpage.api.setAutoScrolling(!opend)
+
+        onMenuStateChange(onMenuStateChangeCallback)
+
+        this.$on('hook:beforeDestroy', () => removeOnMenuStateChangeListener(onMenuStateChangeCallback))
+      }
     },
     created() {
       console.log('in project', this)
