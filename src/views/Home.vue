@@ -95,7 +95,7 @@ const query = `*[_type == 'projects']{
         currentProjectIndex: 0,
         options: {
           licenseKey: process.env.FULL_PAGE_LICENCE,
-          scrollHorizontallyKey: process.env.FULL_PAGE_SCROLL_HORIZONTAL_LICENCE,
+          scrollHorizontallyKey: "bG9yaXMtb2xpdmllci1wb3J0Zm9saW8ubmV0bGlmeS5hcHBfdFdRYzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1NWZw",
           scrollHorizontally: true,
           afterSlideLoad: this.onAfterSlideLoad,
           onSlideLeave: this.onSlideLeave,
