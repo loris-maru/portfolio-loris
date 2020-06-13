@@ -59,7 +59,7 @@ const query = `*[_type == 'projects']{
   background: transparent;
   width: 80vw;
   height: 100vh;
-  padding: 140px 4.4vw;
+  padding: 300px 4.4vw 120px 4.4vw;
   overflow-y: auto;
 
   @media screen and (min-device-width: 1800px)  {
@@ -68,7 +68,7 @@ const query = `*[_type == 'projects']{
 }
 
 .projectItems {
-  flex-basis: 25%;
+  flex-basis: 30%;
   position: relative;
   margin-bottom: 8vh;
 

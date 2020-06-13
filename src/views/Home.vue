@@ -93,11 +93,9 @@ const query = `*[_type == 'projects']{
         projects: query,
         currentProjectIndex: 0,
         options: {
-          licenseKey: "D6F9303C-80914FEB-BBADE2A6-38FABE40",
-          scrollHorizontallyKey: "bG8tb2wuZGVzaWduX3hyeGMyTnliMnhzU0c5eWFYcHZiblJoYkd4NUlVNQ==",
+          licenseKey: process.env.FULL_PAGE_LICENCE,
+          scrollHorizontallyKey: process.env.FULL_PAGE_SCROLL_HORIZONTAL_LICENCE,
           scrollHorizontally: true,
-          parallax: true,
-          parallaxKey: 'bG8tb2wuZGVzaWduX3BPTWNHRnlZV3hzWVhnPW44Tw==',
           afterSlideLoad: this.onAfterSlideLoad,
           onSlideLeave: this.onSlideLeave,
           autoScrolling: true,
