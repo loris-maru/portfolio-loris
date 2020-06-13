@@ -9,7 +9,6 @@
 
 <script>
 import {TimelineLite} from 'gsap'
-
 /*
   First image is loaded normally
   If the imageURL prop changes, we want to set it on the hidden image

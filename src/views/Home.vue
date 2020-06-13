@@ -12,7 +12,7 @@
 
     <HeroImage
       ref="projIMG"
-      :imageURL="imageUrlFor(currentProject.heroImage)"
+      :imageURL="imageUrlFor(currentProject.heroImage).auto('format').quality(70).fit('max').maxWidth(1200).maxHeight(1200)"
       :imageALT="currentProject.headline"
       class="imageHero"
       />
